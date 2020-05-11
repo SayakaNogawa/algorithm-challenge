@@ -2,8 +2,9 @@
 
 // Complete the miniMaxSum function below.
 function miniMaxSum($arr) {
-
-
+    $min = array_sum($arr) - max($arr);
+    $max = array_sum($arr) - min($arr);
+    echo $min ." ". $max;
 }
 
 $stdin = fopen("php://stdin", "r");
